@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Coffee Shop Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="bg-black text-white">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between p-6 fade-in">
+        <div class="text-2xl font-bold">Coffee Shop</div>
+        <ul class="flex space-x-6">
+            <li><a class="hover:text-gray-400" href="#home">Home</a></li>
+            <li><a class="hover:text-gray-400" href="#about">About</a></li>
+            <li><a class="hover:text-gray-400" href="#menu">Menu</a></li>
+            <li><a class="hover:text-gray-400" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center justify-center h-screen text-center bg-cover bg-center relative fade-in" id="home">
+        <img alt="A cozy coffee shop with warm lighting and comfortable seating" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/HZzAXY6lXzZeSSzTbbljNixM7WsrNms5qEzess3JF1fQbsePB.jpg" width="1920"/>
+        <div class="relative z-10">
+            <h1 class="text-5xl font-bold mb-4 slide-in">Welcome to Our Coffee Shop</h1>
+            <p class="text-xl mb-8 slide-in">The best place to enjoy your favorite coffee</p>
+            <a class="animated-btn" href="#menu">Explore Our Menu</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="py-20 px-6 fade-in" id="about">
+    <div class="relative max-w-full mx-auto overflow-hidden">
+        <img 
+            alt="Interior of the coffee shop with wooden tables and a coffee bar" 
+            class="full-width animate-zoom-in" 
+            src="https://storage.googleapis.com/a1aa/image/zjxRetzmdr0LBqYkuSWASCgHfZjkydrGlcJXeFT57blibsePB.jpg"/>
+        <div class="absolute inset-0 flex flex-col items-start justify-center text-white bg-black bg-opacity-50 p-8" style="z-index: 10;">
+            <h3 class="text-4xl font-bold mb-4 text-shadow">About Us</h3>
+            <p class="text-lg mb-6 text-shadow">We are a cozy coffee shop located in the heart of the city. Our mission is to provide a comfortable space for coffee lovers to enjoy high-quality coffee and delicious pastries.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    
+    <!-- Menu Section -->
+   <section class="py-20 px-6 bg-gray-900 fade-in" id="menu">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gradient animate-fade-in">Our Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="menu-item">
+                <img alt="A cup of espresso with a rich crema" class="menu-image" src="https://storage.googleapis.com/a1aa/image/xdqRI9dfni2PY6eBCpfXpu4qTOylqBGWzeGBjejunXcqtx6fE.jpg" />
+                <h3 class="menu-title">Espresso</h3>
+                <p class="menu-price">$3.00</p>
+                <p class="menu-description">A strong and rich coffee made by forcing hot water through finely-ground coffee beans.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="A cup of cappuccino with a beautiful latte art" class="menu-image" src="https://storage.googleapis.com/a1aa/image/JGeikQhMtjVsPKoaBUDdsk5LLs5tU9ampmXoBE3h6is1GrfTA.jpg" />
+                <h3 class="menu-title">Cappuccino</h3>
+                <p class="menu-price">$4.00</p>
+                <p class="menu-description">A perfect blend of espresso, steamed milk, and foam, topped with a sprinkle of cocoa powder.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="A cup of latte with a heart-shaped latte art" class="menu-image" src="https://storage.googleapis.com/a1aa/image/av1jfqYbIAUMdy3lVcueKDG1DAP8FFQDUBV5Lp4DqPImNWfnA.jpg" />
+                <h3 class="menu-title">Latte</h3>
+                <p class="menu-price">$4.50</p>
+                <p class="menu-description">A smooth and creamy coffee made with espresso and steamed milk, topped with a light layer of foam.</p>
+            </div>
+            <!-- Tambahkan item menu lainnya dengan format yang sama -->
+        </div>
+    </div>
+</section>
+
+    
+    <!-- Contact Section -->
+    <section class="py-20 px-6 fade-in" id="contact">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 slide-in">Contact Us</h2>
+            <p class="text-lg mb-6">Have any questions or feedback? We'd love to hear from you!</p>
+            <form class="space-y-4">
+                <div>
+                    <input class="w-full p-4 rounded-lg bg-gray-800 text-white" placeholder="Your Name" type="text"/>
+                </div>
+                               <div>
+                    <input class="w-full p-4 rounded-lg bg-gray-800 text-white" placeholder="Your Email" type="email"/>
+                </div>
+                <div>
+                    <textarea class="w-full p-4 rounded-lg bg-gray-800 text-white h-32" placeholder="Your Message"></textarea>
+                </div>
+                <button class="bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+   <!-- Footer -->
+<footer class="bg-gray-900 text-white py-10 fade-in">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- About Section -->
+        <div class="animate-slide-up">
+            <h3 class="text-xl font-bold mb-4">About Us</h3>
+            <p class="text-gray-400">
+                At Coffee Shop, we are passionate about crafting the perfect cup of coffee. Visit us for a cozy atmosphere, friendly service, and exceptional coffee.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="animate-slide-up delay-200">
+    <h3 class="text-xl font-bold mb-4">Our Address</h3>
+    <ul class="space-y-2">
+        
+        <li class="text-gray-400"><i class="fas fa-city text-yellow-500"></i> Cityville, State 45678</li>
+        <li class="text-gray-400"><i class="fas fa-clock text-yellow-500"></i> Open: Mon-Sun, 7:00 AM - 8:00 PM</li>
+       
+    </ul>
+</div>
+
+        <!-- Contact Information -->
+        <div class="animate-slide-up delay-400">
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+                <li class="text-gray-400"><i class="fas fa-map-marker-alt text-yellow-500"></i> 123 Coffee Lane, Cityville</li>
+                <li class="text-gray-400"><i class="fas fa-phone text-yellow-500"></i> +1 (555) 123-4567</li>
+                <li class="text-gray-400"><i class="fas fa-envelope text-yellow-500"></i> contact@coffeeshop.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-10 border-t border-gray-700 pt-6 text-center animate-fade-in">
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="text-gray-500 mt-4">&copy; 2023 Coffee Shop. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JavaScript for Scroll Animation -->
+<script>
+    // Add animation on scroll
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                } else {
+                    entry.target.classList.remove('animate-visible');
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    document.querySelectorAll('.fade-in, .animate-slide-up').forEach((element) => {
+        observer.observe(element);
+    });
+</script>
+
+
+
+</body>
+</html>
